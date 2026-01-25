@@ -371,304 +371,138 @@
             font-size: 16px;
         }
 
-        .breadcrumb {
-            font-size: 14px;
-        }
-
-        .breadcrumb a {
-            color: #fff;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .breadcrumb a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-            .committee-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 20px;
-            }
-
-            .breadcumb-bg h1 {
-                font-size: 28px;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Top Bar -->
-    <section id="topbar" class="d-none d-lg-block">
-        <div class="container clearfix">
-            <div class="contact-info float-left">
-                <i class="icofont-envelope"></i><a href="mailto:contact@cbb.org">contact@cbb.org</a>
-                <i class="icofont-phone"></i> +88-02-41053631, +88-02-41053632
-            </div>
-            <div class="social-links float-right">
-                <a href="https://www.facebook.com/cbbd" class="facebook" target="_blank"><i class="icofont-facebook"></i></a>
-                <a href="https://twitter.com/cbb" class="twitter" target="_blank"><i class="icofont-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCXUh8yGjbugtUAANE6isAyA" class="youtube" target="_blank"><i class="icofont-youtube"></i></a>
-                <a href="#" class="instagram" target="_blank"><i class="icofont-instagram"></i></a>
-            </div>
+<div id="top-header">
+    
+    </div>
+
+<hr>
+    <!-- ======= Executive Committee Section (Pure Bootstrap) ======= -->
+<section id="committee" class="committee py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>Executive Committee 2026</h2>
+            <p>Meet the leadership team of CBB Welfare Association</p>
         </div>
-    </section>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo float-left">
-                        <a href="/"><img src="images/2021-09-22-18-logo-dru_logo.png" alt="CBB" class="img-fluid"></a>
-                    </div>
-                    <div class="ads float-right">
-                        <a href="#" target="_blank"><img src="images/google-play.png" alt="CBB" class="img-fluid"></a>
+        <div class="row g-4">
+            <!-- President -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Abu Saleh Akon" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Abu Saleh Akon</h5>
+                        <p class="card-text text-muted">President</p>
                     </div>
                 </div>
             </div>
 
-            <nav class="nav-menu float-left d-none d-lg-block">
-                <ul>
-                    <li class="">
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="drop-down">
-                        <a href="#" data-toggle="drop-down" role="button" aria-haspopup="true" aria-expanded="false">
-                            About Us
-                        </a>
-                        <ul class="drop-down">
-                            <li><a href="/about-us">At A Glance</a></li>
-                            <li><a href="/constitution">Constitution</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="/committee">Executive Committee</a>
-                    </li>
-                    <li class="drop-down">
-                        <a href="#" data-toggle="drop-down" role="button" aria-haspopup="true" aria-expanded="false">
-                            Members
-                        </a>
-                        <ul class="drop-down">
-                            <li><a href="/members">All Members</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="/contact">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Breadcrumb Section -->
-    <section class="breadcumb-bg">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb" style="background: transparent; margin: 0; padding: 10px 0;">
-                    <li class="breadcrumb-item"><a href="/" style="color: #fff;">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/about-us" style="color: #fff;">About Us</a></li>
-                    <li class="breadcrumb-item active" aria-current="page" style="color: #fff;">Executive Committee</li>
-                </ol>
-            </nav>
-            <h1>Executive Committee</h1>
-        </div>
-    </section>
-
-    <!-- Executive Committee Section -->
-    <section id="committee" class="committee">
-        <div class="container">
-            <div class="section-title">
-                <h2>Executive Committee 2026</h2>
-                <p>Meet the leadership team of CBB Wellfare Association</p>
-            </div>
-            <div class="bg__border"></div>
-
-            <div class="committee-grid">
-                <!-- President -->
-                <div class="committee-member-card">
-                    <img src="images/1%20Abu%20Saleh%20Akon.JPG" alt="Abu Saleh Akon">
-                    <div class="member-info">
-                        <h4>Abu Saleh Akon</h4>
-                        <p class="position">President</p>
-                    </div>
-                </div>
-
-                <!-- Vice-President -->
-                <div class="committee-member-card">
-                    <img src="images/2%20Mahde%20Azad%20Masum.JPG" alt="Mahde Azad Masum">
-                    <div class="member-info">
-                        <h4>Mahde Azad Masum</h4>
-                        <p class="position">Vice-President</p>
-                    </div>
-                </div>
-
-                <!-- General Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/3%20Mynul%20Hasan%20Sohel.png" alt="Mynul Hasan Sohel">
-                    <div class="member-info">
-                        <h4>Mynul Hasan Sohel</h4>
-                        <p class="position">General Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Joint Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/4%20Jafar%20Iqbal.JPG" alt="Md. Jafar Iqbal">
-                    <div class="member-info">
-                        <h4>Md. Jafar Iqbal</h4>
-                        <p class="position">Joint Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Finance Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/5%20Niaz%20Mahmud%20Sohel.JPG" alt="Niaz Mahmud Sohel">
-                    <div class="member-info">
-                        <h4>Niaz Mahmud Sohel</h4>
-                        <p class="position">Finance Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Organizing Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/6%20M%20M%20Jasim.JPG" alt="M M Jasim">
-                    <div class="member-info">
-                        <h4>M M Jasim</h4>
-                        <p class="position">Organizing Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Office Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/7%20Rashim%20Molla.JPG" alt="Md. Rashim (Rashim Molla)">
-                    <div class="member-info">
-                        <h4>Md. Rashim</h4>
-                        <p class="position">Office Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Woman Affairs Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/8%20Jannatul%20Ferdous%20Panna.JPG" alt="Jannatul Fardush Panna">
-                    <div class="member-info">
-                        <h4>Jannatul Fardush Panna</h4>
-                        <p class="position">Woman Affairs Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Publicity & Publication Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/9%20Mizan%20Chowdhury.png" alt="Mizan Chowdhury">
-                    <div class="member-info">
-                        <h4>Mizan Chowdhury</h4>
-                        <p class="position">Publicity & Publication Secretary</p>
-                    </div>
-                </div>
-
-                <!-- IT and Training Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/10%20Mahmud%20Sohel.JPG" alt="Mahmud Sohel">
-                    <div class="member-info">
-                        <h4>Mahmud Sohel</h4>
-                        <p class="position">IT and Training Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Sports Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/11%20Omar%20Faruk%20Rubel.JPG" alt="Omar Faruque Rubel">
-                    <div class="member-info">
-                        <h4>Omar Faruque Rubel</h4>
-                        <p class="position">Sports Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Cultural Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/12%20Monowar%20Hossain.JPG" alt="Md. Monowar Hossain">
-                    <div class="member-info">
-                        <h4>Md. Monowar Hossain</h4>
-                        <p class="position">Cultural Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Entertainment Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/13%20Aminul%20Haque%20Bhuiyan.png" alt="Aminul Haque Bhuiyan">
-                    <div class="member-info">
-                        <h4>Aminul Haque Bhuiyan</h4>
-                        <p class="position">Entertainment Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Welfare Secretary -->
-                <div class="committee-member-card">
-                    <img src="images/14%20Rafiq%20Mridha.JPG" alt="Rafiq Mridha">
-                    <div class="member-info">
-                        <h4>Rafiq Mridha</h4>
-                        <p class="position">Welfare Secretary</p>
-                    </div>
-                </div>
-
-                <!-- Executive Members -->
-                <div class="committee-member-card">
-                    <img src="images/15%20Akter%20Hossain.jpg" alt="Md. Akter Hosen">
-                    <div class="member-info">
-                        <h4>Md. Akter Hosen</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/16%20Ali%20Azam.JPG" alt="Ali Azam">
-                    <div class="member-info">
-                        <h4>Ali Azam</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/17%20Mahfuz%20Sadi.JPG" alt="Mahfuz Sadi">
-                    <div class="member-info">
-                        <h4>Mahfuz Sadi</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/18%20Al-Amin%20Azad.JPG" alt="Al-Amin Azad">
-                    <div class="member-info">
-                        <h4>Al-Amin Azad</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/19%20Mohammad%20Naymuddin.jpg" alt="Mohammad Naymuddin">
-                    <div class="member-info">
-                        <h4>Mohammad Naymuddin</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/20%20Sumon%20Chowdhury.png" alt="Sumon Chowdhury">
-                    <div class="member-info">
-                        <h4>Sumon Chowdhury</h4>
-                        <p class="position">Executive Member</p>
-                    </div>
-                </div>
-
-                <div class="committee-member-card">
-                    <img src="images/21%20Md.%20Mazaharul%20Islam.jpeg" alt="Md. Mazaharul Islam">
-                    <div class="member-info">
-                        <h4>Md. Mazaharul Islam</h4>
-                        <p class="position">Executive Member</p>
+            <!-- Vice-President -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/33.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Mahde Azad Masum" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Mahde Azad Masum</h5>
+                        <p class="card-text text-muted">Vice-President</p>
                     </div>
                 </div>
             </div>
+
+            <!-- General Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/34.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Mynul Hasan Sohel" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Mynul Hasan Sohel</h5>
+                        <p class="card-text text-muted">General Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Joint Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/35.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Md. Jafar Iqbal" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Md. Jafar Iqbal</h5>
+                        <p class="card-text text-muted">Joint Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/36.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Niaz Mahmud Sohel" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Niaz Mahmud Sohel</h5>
+                        <p class="card-text text-muted">Finance Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizing Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/37.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="M M Jasim" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">M M Jasim</h5>
+                        <p class="card-text text-muted">Organizing Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Office Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/38.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Md. Rashim" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Md. Rashim</h5>
+                        <p class="card-text text-muted">Office Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Woman Affairs Secretary -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/women/39.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Jannatul Fardush Panna" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Jannatul Fardush Panna</h5>
+                        <p class="card-text text-muted">Woman Affairs Secretary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Members Example -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/40.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Md. Akter Hosen" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Md. Akter Hosen</h5>
+                        <p class="card-text text-muted">Executive Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="https://randomuser.me/api/portraits/men/41.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Ali Azam" style="width:120px;height:120px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Ali Azam</h5>
+                        <p class="card-text text-muted">Executive Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more members similarly -->
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Members Section -->
     <section class="members-section">
@@ -874,7 +708,25 @@
     </footer>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
+<script>
+        // Function to load HTML into the header on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("html/header.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Failed to load header.html: " + response.status);
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById("top-header").innerHTML = html;
+                })
+                .catch(error => {
+                    console.error(error);
+                    document.getElementById("top-header").innerHTML = "<p>Header failed to load.</p>";
+                });
+        });
+    </script>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
