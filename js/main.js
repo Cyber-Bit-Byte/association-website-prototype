@@ -28,36 +28,49 @@
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        e.preventDefault();
+ $(document).on('click', '.nav-menu a.scrollto, .mobile-nav a.scrollto, a.scrollto', function(e) {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && location.hostname == this.hostname) {
 
-        var scrollto = target.offset().top - scrolltoOffset;
+    var target = $(this.hash);
+    if (target.length) {
+      e.preventDefault();
 
-        if ($(this).attr("href") == '#header') {
-          scrollto = 0;
-        }
+      var scrollto = target.offset().top - scrolltoOffset;
 
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-        return false;
+      if ($(this).attr("href") == '#header') {
+        scrollto = 0;
       }
+
+      $('html, body').animate({
+        scrollTop: scrollto
+      }, 1500, 'easeInOutExpo');
     }
-  });
+  }
+});
+
+
+
+// (Visual hint)
+$(document).on('click', '.nav-menu .drop-down > a.dropdown-toggle', function(e) {
+  e.preventDefault();
+  $(this).next('ul').toggle();
+});
+
+$(document).on('click', function(e) {
+  if (!$(e.target).closest('.nav-menu .drop-down').length) {
+    $('.nav-menu .drop-down > ul').hide();
+  }
+});
+
+// Close dropdown when clicking outside
+$(document).on('click', function(e) {
+  if (!$(e.target).closest('.nav-menu .drop-down').length) {
+    $('.nav-menu .drop-down > ul').hide();
+  }
+});
+
+
 
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
